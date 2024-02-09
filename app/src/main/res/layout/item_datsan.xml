@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardpitch"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="10dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/layout"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/football_icon"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shift :"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:layout_marginBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="#009688"/>
+                <TextView
+                    android:id="@+id/tv_YardSong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yard Song:"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#009688"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filed name:"
+                android:textSize="20dp"
+                android:textColor="#FF0000"
+                android:fontFamily="@font/ubuntubold"
+                />
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#FF0000"
+                android:fontFamily="@font/ubuntubold"
+                />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

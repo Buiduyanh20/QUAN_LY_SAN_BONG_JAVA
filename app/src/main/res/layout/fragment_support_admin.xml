@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragment.SupportFragment"
+        android:orientation="vertical"
+        android:background="@drawable/bg_white1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_login">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Support"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:fontFamily="@font/ubuntubold"
+                android:textColor="#00BCD4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linner_accoutadmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pertion" />
+
+            <TextView
+                android:id="@+id/tv_name_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Văn Dũng"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linner_doimk_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/lockdoimk" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đổi Mật Khẩu"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linner_logout_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/exit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng Xuất"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp" />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_countpitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:textColor="#00BCD4"
+                android:visibility="gone"
+                android:fontFamily="@font/ubuntumedium"
+                />
+
+            <TextView
+                android:id="@+id/tv_pricepitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="200000"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#00BCD4"
+                android:visibility="gone"
+                android:fontFamily="@font/ubuntumedium"
+                />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số tài khoản chủ sân: "
+                android:textSize="22dp"
+                android:fontFamily="@font/ubuntubold"
+                />
+            <TextView
+
+                android:id="@+id/tv_thenumberofyardowneraccounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textColor="#00BCD4"
+                android:fontFamily="@font/ubuntumedium"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

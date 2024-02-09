@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bogoc_dialog_information"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shift Information"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="#00BCD4"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:padding="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DEE1E1"
+            android:layout_marginBottom="20dp"
+            />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/iv_update"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/img_pitch"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="Address:"
+                android:layout_marginLeft="9dp"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Đường Lê Đức Thọ, Phường Mỹ Đình 1, Quận Nam Từ Liêm, Hà Nội"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:padding="5dp"
+                android:text="Filde name:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppinsbold"
+                />
+            <TextView
+                android:id="@+id/tv_pitchname_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Filde name"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsmedium"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:fontFamily="@font/poppinsbold"
+                />
+            <TextView
+                android:id="@+id/tv_date_dialog"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsmedium"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="Time: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:fontFamily="@font/poppinsbold"
+                />
+            <TextView
+                android:id="@+id/tv_time_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Time "
+                android:textSize="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/black"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="Yard price: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsbold"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_price_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="Yard price:"
+                android:textSize="15dp"
+                android:textColor="#DF0D0D"
+                android:fontFamily="@font/poppinsmedium"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEE1E1"
+        android:layout_marginBottom="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_cancel_dialog_datsan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00BCD4"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btn_rent_dialog_datsan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:backgroundTint="#00BCD4"
+            android:text="rent"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</LinearLayout>
